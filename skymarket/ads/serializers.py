@@ -31,12 +31,12 @@ class AdSerializer(serializers.ModelSerializer):
     class Meta:
         model = Ad
         fields = ('pk',
-                  'author_id',
+                  'image',
                   'title',
-                  'description',
                   'price',
+                  'phone',
+                  'description',
                   'author_first_name',
                   'author_last_name',
-                  'image',
-                  'phone',
+                  'author_id',
                   )
